@@ -4,16 +4,16 @@ using System.Diagnostics;
 
 namespace ConsoleApp1
 {
-    internal class Program
+    public class Program
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            new TestObject2(1, "name");
+            new TestObject(1, "name");
         }
     }
 
     [ImmutableConstructor]
-    public sealed partial class TestObject2
+    public sealed partial class TestObject
     {
         public uint Id { get; }
         public string Name { get; }
