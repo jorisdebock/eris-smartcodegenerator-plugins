@@ -1,0 +1,33 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildConfiguration: 'Release'
+  projectDirectory: 'src/Eris.SmartCodeGenerator.ImmutableGenerator' 
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '$(projectDirectory)/*.csproj'
+    arguments: '--configuraton $(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'pack'
+    packagesToPack: '$(projectDirectory)/*.csproj'
+    configuration: '$(buildConfiguration)'
+    nobuild: true
+    includesymbols: true
+    versioningScheme: 'off'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)'
+    nuGetFeedType: 'external'
+    publishFeedCredentials: 'nuget.org'
+
