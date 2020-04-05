@@ -1,17 +1,20 @@
-# SmartCodeGenerator Immutable plugin
+# SmartCodeGenerator plugins
 
-Using [SmartCodeGenerator](https://github.com/cezarypiatek/SmartCodeGenerator)
+This project uses [SmartCodeGenerator](https://github.com/cezarypiatek/SmartCodeGenerator)
 
 ## How to use a custom plugin
 
 1. Install `SmartCodeGenerator.Engine` NuGet package
-2. Install `Eris.SmartCodeGenerator.ImmutableGenerator` NuGet package
-3. Add source code of the marking attribute `ImmutableConstructor` into your codebase
+2. Install the package with your plugin
+3. Add source code of the marking attribute into your codebase
 4. Since now you can start marking code with your attribute and after recompilation, the generated code should be available at your disposal.
 
-__IMPORTANT:__ The source code of the marking attribute need to be copied into a consuming project because there should be no runtime dependency between the project that uses the generator plugin and the generator plugin itself. 
 
+## Plugins
 
+### Constructor
+
+Marking attribute, this should be added to your code base
 ```c#
 namespace Eris.SmartCodeGenerator.ImmutableGenerator
 {
@@ -23,11 +26,7 @@ namespace Eris.SmartCodeGenerator.ImmutableGenerator
 }
 ```
 
-## Examples
-
-### Constructor
-
-Add the `ImmutableConstructor` attribute to your class, this class should be partial and only contain readonly properties
+Add the `ImmutableConstructor` attribute to your class. The class should be partial and contain readonly properties
 ```c#
 [ImmutableConstructor]
 public sealed partial class TestObject
