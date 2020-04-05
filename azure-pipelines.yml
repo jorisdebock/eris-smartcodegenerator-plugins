@@ -6,7 +6,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  csproj: '**/*.csproj'
+  csproj: 'src/Eris.SmartCodeGenerator.ImmutableGenerator/*.csproj'
   nupkg: 'src/Eris.SmartCodeGenerator.ImmutableGenerator/bin/Release/*.nupkg'
 
 steps:
