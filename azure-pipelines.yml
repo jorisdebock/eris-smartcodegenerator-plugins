@@ -22,6 +22,7 @@ steps:
     command: 'pack'
     packagesToPack: '$(projectDirectory)/*.csproj'
     configuration: '$(buildConfiguration)'
+    packDirectory: '$(Build.ArtifactStagingDirectory)/nupkg'
     includesymbols: true
     versioningScheme: 'off'
     verbosityPack: 'Normal'
@@ -30,6 +31,6 @@ steps:
   displayName: Publish
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/nupkg'
     ArtifactName: 'smartcodegenerator-immutablegenerator-nupkg'
     publishLocation: 'Container'
