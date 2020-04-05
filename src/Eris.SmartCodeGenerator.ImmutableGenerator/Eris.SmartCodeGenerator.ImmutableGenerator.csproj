@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.0</Version>
     <Authors>Eris</Authors>
     <PackageProjectUrl>https://github.com/wazowsk1/eris-smartcodegenerator-plugins</PackageProjectUrl>
