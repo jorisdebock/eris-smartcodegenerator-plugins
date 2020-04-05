@@ -1,7 +1,9 @@
 # SmartCodeGenerator plugins
 
-This project uses [SmartCodeGenerator](https://github.com/cezarypiatek/SmartCodeGenerator)
+[![Build Status](https://joris.visualstudio.com/eris/_apis/build/status/wazowsk1.eris-smartcodegenerator-plugins?branchName=master)](https://joris.visualstudio.com/eris/_build/latest?definitionId=21&branchName=master)
+[![](https://img.shields.io/nuget/v/Eris.SmartCodeGenerator.ImmutableGenerator.svg)](https://www.nuget.org/packages/Eris.SmartCodeGenerator.ImmutableGenerator)
 
+This project uses [SmartCodeGenerator](https://github.com/cezarypiatek/SmartCodeGenerator)
 ## How to use a custom plugin
 
 1. Install `SmartCodeGenerator.Engine` NuGet package
