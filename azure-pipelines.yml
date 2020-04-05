@@ -13,7 +13,7 @@ steps:
   inputs:
     command: 'build'
     projects: '$(projectDirectory)/*.csproj'
-    arguments: '--configuraton $(buildConfiguration)'
+    arguments: '/p:Configuraton=$(buildConfiguration)'
 
 - task: DotNetCoreCLI@2
   inputs:
