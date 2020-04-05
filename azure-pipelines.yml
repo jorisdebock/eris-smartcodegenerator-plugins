@@ -1,0 +1,24 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildConfiguration: 'Release'
+  csproj: '**/*.csproj'
+  nupkg: 'src/Eris.SmartCodeGenerator.ImmutableGenerator/bin/Release/*.nupkg'
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '$(csproj)'
+    configuration: '$(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'push'
+    packagesToPush: '$(nupkg)'
+    nuGetFeedType: 'external'
+    publishFeedCredentials: 'nuget.org'
