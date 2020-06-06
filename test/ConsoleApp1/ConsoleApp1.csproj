@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Eris.SmartCodeGenerator.ImmutableGenerator" Version="1.0.0" />
-    <PackageReference Include="SmartCodeGenerator.Engine" Version="1.2.9" />
+    <PackageReference Include="Eris.SmartCodeGenerator.ImmutableGenerator" Version="1.1.0" />
+    <PackageReference Include="SmartCodeGenerator.Engine" Version="1.4.23" />
   </ItemGroup>
 </Project>

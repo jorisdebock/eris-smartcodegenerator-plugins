@@ -15,8 +15,6 @@ namespace Eris.SmartCodeGenerator.ImmutableGenerator
     {
         protected override Task<SyntaxList<MemberDeclarationSyntax>> GenerateMembersAsync(CSharpSyntaxNode memberNode, AttributeData markerAttribute, TransformationContext context, CancellationToken cancellationToken)
         {
-            //Debugger.Launch();
-
             var classDeclaration = memberNode as ClassDeclarationSyntax;
 
             if (!classDeclaration.Modifiers.Any(SyntaxKind.PartialKeyword))
