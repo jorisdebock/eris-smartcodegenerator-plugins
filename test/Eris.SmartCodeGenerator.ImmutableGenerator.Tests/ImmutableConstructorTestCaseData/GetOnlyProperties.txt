@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Collections.ObjectModel;
+using Eris.SmartCodeGenerator.ImmutableGenerator;
+
+namespace Eris.SmartCodeGenerator.ImmutableGenerator.Tests.ImmutableConstructorTestCaseData
+{
+    [ImmutableConstructor]
+    public partial class TestObject
+    {
+        public uint Id { get; }
+        public string Name { get; }
+    }
+}

@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{386524A4-74D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C1083007-9EEE-4AB4-9043-AF3EBEF3F67C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eris.SmartCodeGenerator.ImmutableGenerator.Tests", "test\Eris.SmartCodeGenerator.ImmutableGenerator.Tests\Eris.SmartCodeGenerator.ImmutableGenerator.Tests.csproj", "{506B38D6-A7C3-42F2-9F45-DDB6F20CC35C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{6C510E94-195C-444E-81A4-CB7F674A6E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C510E94-195C-444E-81A4-CB7F674A6E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C510E94-195C-444E-81A4-CB7F674A6E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{506B38D6-A7C3-42F2-9F45-DDB6F20CC35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{506B38D6-A7C3-42F2-9F45-DDB6F20CC35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{506B38D6-A7C3-42F2-9F45-DDB6F20CC35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{506B38D6-A7C3-42F2-9F45-DDB6F20CC35C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4831567F-AB5B-4A83-9776-C8039E53C910} = {386524A4-74DF-4BB1-B9BE-46154EE2D4DD}
 		{6C510E94-195C-444E-81A4-CB7F674A6E95} = {C1083007-9EEE-4AB4-9043-AF3EBEF3F67C}
+		{506B38D6-A7C3-42F2-9F45-DDB6F20CC35C} = {C1083007-9EEE-4AB4-9043-AF3EBEF3F67C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {37CC7F02-0145-4FC6-A40B-1BC8E14A6D14}
